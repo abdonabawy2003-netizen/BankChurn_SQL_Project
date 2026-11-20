@@ -45,7 +45,7 @@ The raw CSV is loaded into a **staging table** (`stg` schema) and then split int
 **Relationships:** `Geography` 1:N `Customers`, `Gender` 1:N `Customers`, and `Customers` 1:1 with each of the three detail tables.
 
 ### ERD
-![ERD](docs/ERD.png)
+![ERD](docs/docs/ERD.png)
 
 ### Source-to-Target Mapping
 ![Mapping](docs/Mapping.png)
@@ -77,7 +77,7 @@ Data type decisions: `Balance` and `EstimatedSalary` were converted from `float`
 │   ├── 04_Insights_Customer_Value.sql # money and customer value
 │   └── 05_Insights_Retention_Risk.sql # who to act on now
 └── docs/
-    ├── ERD.png
+    ├── docs/ERD.png
     ├── Mapping.png
     └── screenshots/
 ```
