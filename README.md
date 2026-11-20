@@ -48,7 +48,7 @@ The raw CSV is loaded into a **staging table** (`stg` schema) and then split int
 ![ERD](docs/docs/ERD.png)
 
 ### Source-to-Target Mapping
-![Mapping](docs/Mapping.png)
+![Mapping](docs/docs/Mapping.png)
 
 Data type decisions: `Balance` and `EstimatedSalary` were converted from `float` to `DECIMAL(18,2)` because money needs fixed precision. Small integers use `TINYINT` / `SMALLINT`, flags use `BIT`, and text uses `NVARCHAR`.
 
@@ -78,7 +78,7 @@ Data type decisions: `Balance` and `EstimatedSalary` were converted from `float`
 │   └── 05_Insights_Retention_Risk.sql # who to act on now
 └── docs/
     ├── docs/ERD.png
-    ├── Mapping.png
+    ├── docs/Mapping.png
     └── screenshots/
 ```
 
